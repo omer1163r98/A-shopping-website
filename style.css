@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+body{
+    font-family: 'Cinzel', serif;
+    margin:0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: auto;
+    padding:10px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    width:300px;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li{
+    cursor: pointer;
+}
+
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar input{
+    border-radius: 17px;
+    width:85px;
+    padding:8px;
+}
+.home-drop-down{
+    width:200px;
+    margin-left: 300px;
+    display: none;
+
+}
+
+.home-drop-down h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
