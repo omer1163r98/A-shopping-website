@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
 
+*{
+    font-family: 'Cinzel', serif;
+}
+
 body{
     font-family: 'Cinzel', serif;
     margin:0;
@@ -7,21 +11,25 @@ body{
 }
 
 .navbar{
-    width: 100%;
-    height: auto;
-    padding:10px;
-    position: fixed;
+    width: 90%;
+    padding:0px;
+    margin: auto;
     background-color: rgb(255, 255, 255);
 }
 
-.navbar .container{
+.container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin:0;
+    padding: 0;
+
 }
 
 .menu{
     width:300px;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .menu ul{
@@ -34,22 +42,37 @@ body{
     cursor: pointer;
 }
 
-.right-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
-.search-bar input{
-    border-radius: 17px;
-    width:85px;
-    padding:8px;
-}
-.home-drop-down{
-    width:200px;
-    margin-left: 300px;
+.break{
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    margin: auto;
     display: none;
+    animation:fadeIn .3s ease-in;
+}
 
+.home-drop-down{
+    width:40%;
+    padding: 30px;
+    display: none;
+    margin-left: 850px;
+    background-color: rgb(250, 250, 250);
+    animation:fadeIn .3s ease-in;
+
+
+}
+
+.home-drop-down .sub-menu{
+    width:fit-content;
 }
 
 .home-drop-down h3:hover {
@@ -57,7 +80,315 @@ body{
     cursor: pointer;
 }
 
+.about-drop-down{
+    width:100%;
+    padding: 30px;
+    display: none;
+    background-color: rgb(250, 250, 250);
+    margin-left: 850px;
+    animation:fadeIn .3s ease-in;
+
+
+}
+
+.about-drop-down .sub-menu{
+    width:fit-content;
+}
+
+.about-drop-down h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contact-drop-down{
+    width: 250px;
+    display: none;
+    margin-left: 850px;
+    background-color: rgb(250, 250, 250);
+    padding:60px;
+    z-index: 2;
+    animation:fadeIn .3s ease-in;
+
+    
+
+}
+
+.contact-drop-down .sub-menu form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.contact-drop-down .sub-menu button {
+    background-color: black;
+    color:white;
+    margin-top: 20px;
+    width: 200px;
+    align-self: center;
+    padding:4px;
+    border-radius: 12px;
+    border-style: none;
+
+}
+
+ .message{
+    height: 50px;    
+}
+
+.hero-page{
+    width:100%;
+
+}
+
+.hero-text{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    padding-top:100px
+}
+
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
 
 
 
+.new-arrivals{
+    width:90%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    
+}
 
+
+.new-arrival-content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(217, 217, 217);
+    padding:10px;
+    border-radius: 20px;
+    width:30%;
+    height: 60vh;
+    
+}
+
+.new-arrival-content img{
+    width: 250px;
+    height: 250px;
+    align-self: center;
+}
+
+.new-arrival-content button{
+    background-color: black;
+    color:white;
+    width:100px;
+    height:40px;
+    border-radius: 15px;
+    border-style: none;
+    align-self: center;
+}
+.new-arrival-content p{
+    text-align: center;
+
+}
+
+
+.headphone-banner{
+    width:80%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 217, 217);
+    margin: auto;
+    border-radius: 17px;
+    padding: 45px;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.headphone-specs{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-container .text p{
+    font-size: 12px;
+    opacity: 60%;
+    width: 30%;
+}
+
+.banner-container .text h2{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.banner-container img{
+    width: 250px;
+    height: auto;
+}
+
+.shop-container{
+    height: 230vh;
+    width: 100%;
+    display: block;
+
+}
+
+.shop-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-content h1{
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+
+.shop-items{
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    
+
+    
+}
+
+.shop-items .item{
+    width:40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 17px;
+    margin: 10px 0;
+    padding:10px;
+
+}
+
+.shop-items .item img{
+    width: 150px;
+    height: auto;
+}
+
+.shop-items .item .headphones2{
+    width: 150px;
+    height: 150px;
+}
+
+.shop-items .item button{
+    background-color: black;
+    color:white;
+    width:100px;
+    height:30px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.shop-more {
+    width: 160px;
+    height: 40px;
+    background-color: black;
+    color:white;
+    font-size: 15px;
+    border-radius: 17px;
+    border-style: none;
+    margin: 50px 0;
+
+}
+
+.sale-container{
+    width: 80%;
+    height: 80vh;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 18px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(to right , black 45%, rgb(209, 209, 209));
+    
+}
+
+.sale-container img{
+    width:350px;
+    height:350px;
+}
+
+.sale-text{
+    line-height: 20px;
+    color:white;
+    
+    
+}
+
+.sale-text h2{
+    font-size: 40px;
+}
+
+.sale-text h1{
+    font-size: 70px;
+}
+
+.sale-text p{
+    opacity: 70%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    border-top: 1px solid grey;
+    background-color: black;
+    height: 40vh;
+
+}
+
+.footer-column {
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+    color: aliceblue;
+    margin-top: 60px;
+}
+
+.footer-column h3{
+    font-size: 12px;
+    align-self: baseline;
+}
+
+.footer-column ul{
+    list-style: none;
+    margin-left: -35px;
+}
+.footer-column li{
+    font-size: 11px;
+    color: rgb(215, 215, 215);
+    line-height: 20px;    
+
+}
+
+.copyright{
+    background-color: black;
+    color:aliceblue;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+    border-top: 1px solid rgb(112, 112, 112);
+    padding-top: 5px;
+}
