@@ -163,15 +163,15 @@ let itemButtons = [
 
 
 let products = [
-    {name: 'comet bag', price: 44.99, description: '', img: './comet-bag.webp'},
-    {name: 'comet pouch', price: 22.99, img: './puch.webp'},
-    {name: 'blue ray glasses', price: 84.99, img: './glasses.png'},
-    {name: 'gaming keyboard', price: 34.99, img: './keyboard.webp'},
-    {name: 'gaming mouse', price: 20.99, img: './mouse.webp'},
-    {name: 'gaming headphones', price: 79.99, img: './headphones2.png'},
-    {name: 'desk pad', price: 15.99, img: './desk-pad.webp'},
-    {name: 'power bank', price: 29.99, img: './power-bank.png'},
-    {name: 'ring', price: 9.99, img: './ring.jpeg'}
+    {name: 'comet bag', price: 44.99, description: '', img: './images/comet-bag.webp'},
+    {name: 'comet pouch', price: 22.99, img: './images/puch.webp'},
+    {name: 'blue ray glasses', price: 84.99, img: './images/glasses.png'},
+    {name: 'gaming keyboard', price: 34.99, img: './images/keyboard.webp'},
+    {name: 'gaming mouse', price: 20.99, img: './images/mouse.webp'},
+    {name: 'gaming headphones', price: 79.99, img: './images/headphones2.png'},
+    {name: 'desk pad', price: 15.99, img: './images/desk-pad.webp'},
+    {name: 'power bank', price: 29.99, img: './images/power-bank.png'},
+    {name: 'ring', price: 9.99, img: './images/ring.jpeg'}
 ]
 
 
