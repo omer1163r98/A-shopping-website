@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Cinzel', serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -453,4 +454,82 @@ a{
     text-align: center;
     font-size: 8px;
     font-weight: bold;
+}
+
+#cart{
+    background-color: rgb(255, 255, 255);
+    margin: 20px;
+    width: 50%;
+    height: 50%;
+    color: black;
+    position: absolute;
+    top: 52px;
+    left: 45%;
+    border: 2px solid black;
+    overflow: auto;
+    scroll-behavior: smooth;
+    display: none;
+
+    
+    
+}
+
+
+.cart-item{
+    border-bottom: 1px solid rgb(197, 197, 197);
+    height: 100px;
+    width: 100%;
+    display: flex;
+
+
+    
+}
+
+.cart-text-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    column-gap: 290px;
+    
+}
+
+.cart-item p{
+    font-size: 12px;
+}
+
+.cart-item img{
+    width:80px;
+    height: auto;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.total-cart-container{
+    display: block;
+    z-index: 0;
+    
+}
+
+
+.total-cart{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    
+    
+    
+
+}
+
+.total-cart button{
+    background-color: black;
+    color:white;
+    width:120px;
+    height:30px;
+    border-radius: 15px;
+    border-style: none;
 }

@@ -197,6 +197,7 @@ function updateItem(buttonIndex, productIndex) {
         })
           
     }
+    return  name;
         }
       
   updateItem(0,0)
@@ -214,11 +215,78 @@ function updateItem(buttonIndex, productIndex) {
 let addToCart = document.querySelector('.add-to-cart')
 let cartCircle = document.querySelector('.cart-circle')
 function updateCartCircle () {
-    for (i = 1; i >= 1; i++){
+    let items = 1;
+
     addToCart.addEventListener('click', () => {
         itemPage.style.display = "none";
-        cartCircle.innerText = i;
-    })}
+        cartCircle.innerText = items;
+        items ++;
+        }
+    )}
+
+updateCartCircle(); 
+
+// save info to the cart
+
+let total = 0
+let totalCartPrice = [];
+let cartBody = document.getElementById('cart');
+function addInfoToCart () {
+    let totalPrice = document.querySelector('.total-price')
+    addToCart.addEventListener('click', () => {
+        let cartNameValue = itemName.innerText;
+        let cartPriceValue = parseFloat(itemPrice.innerText);
+        let cartImgSrc = itemImg.src;
+    
+        let newItem = document.createElement('div');
+        newItem.classList.add('cart-item'); 
+    
+        let textElement = document.createElement('div');
+        textElement.classList.add('cart-text-content')
+
+        let itemNameElement = document.createElement('p');
+        itemNameElement.innerText = cartNameValue;
+    
+        let itemPriceElement = document.createElement('p');
+        itemPriceElement.innerText = cartPriceValue;
+    
+        let itemImgElement = document.createElement('img');
+        itemImgElement.src = cartImgSrc;
+
+
+
+        newItem.appendChild(itemImgElement);
+        textElement.appendChild(itemNameElement);
+        textElement.appendChild(itemPriceElement);
+        newItem.appendChild(textElement);
+    
+        cartBody.appendChild(newItem);
+        
+        totalCartPrice.push(cartPriceValue)
+        console.log(totalCartPrice)
+
+        total = totalCartPrice.reduce((total, currentValue) => total + currentValue, 0);
+        totalPrice.innerText = total.toFixed(2)
+
+    });
+    
 }
 
-updateCartCircle();
+addInfoToCart()
+
+let cartLogo = document.querySelector('.cart-logo');
+cartLogo.addEventListener('click', () => {
+    cartBody.style.display = 'block'
+})
+
+cartBody.addEventListener('mouseover', () => {
+    cartBody.style.display = 'block'
+})
+
+cartBody.addEventListener('mouseout', () => {
+    cartBody.style.display = 'none'
+})
+
+//totalPrice.innerText = totalCartPrice.reduce((total, currentValue) => total + currentValue, 0)
+
+//console.log(totalPrice.innerText)

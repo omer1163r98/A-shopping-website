@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Terc</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -20,7 +20,7 @@
             <li id="#home">Home</li>
             <li id="#about">About</li>
             <li id="#contact">Contact</li>
-            <li><img style = "width: 20px;"src="shopping-cart-line.png"/></li>
+            <li><img class="cart-logo" style = "width: 20px;"src="shopping-cart-line.png"/></li>
         </ul>
         <div class="cart-circle"></div>
     </div>
@@ -234,7 +234,7 @@
 </section>
 
 
-<section>
+<section id="item-popup">
 <div class="item-description-page">
         
     <div class="item-img"> <img id="item-img" src="headphones2.png"> </div>
@@ -250,8 +250,24 @@
 
 
 
+<div id="cart">
+    
+        
+
+<div class="total-cart-container">
+    <div class="total-cart">
+        <h3>Total: </h3>
+        <p class="total-price"></p>
+        <button>checkout</button>
+    </div>
+</div>
+
+</div>
 
 
-<script src="script.js"></script>
+
+
+
+<script src="script.js" defer></script>
 </body>
 </html>
