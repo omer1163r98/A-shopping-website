@@ -10,6 +10,11 @@ body{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
 .navbar{
     width: 90%;
     padding:0px;
@@ -174,6 +179,8 @@ body{
     border-radius: 20px;
     width:30%;
     height: 60vh;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
     
 }
 
@@ -205,6 +212,8 @@ body{
     margin: auto;
     border-radius: 17px;
     padding: 45px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
 }
 
 .banner-container{
@@ -239,6 +248,7 @@ body{
     height: 230vh;
     width: 100%;
     display: block;
+    
 
 }
 
@@ -277,6 +287,8 @@ body{
     border-radius: 17px;
     margin: 10px 0;
     padding:10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
 
 }
 
@@ -321,6 +333,8 @@ body{
     align-items: center;
     justify-content: space-around;
     background: linear-gradient(to right , black 45%, rgb(209, 209, 209));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
     
 }
 
@@ -391,4 +405,52 @@ body{
     font-size: 12px;
     border-top: 1px solid rgb(112, 112, 112);
     padding-top: 5px;
+}
+
+.item-description-page{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    width: 50%;
+    z-index:4;
+    position: fixed;
+    border: 1px solid rgb(217, 217, 217);
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+
+}
+
+.item-description-page button{
+    background-color: black;
+    color:white;
+    width:150px;
+    height:30px;
+    border-radius: 15px;
+    border-style: none;}
+
+.item-img img{
+    width: 300px;
+    height: auto;
+}
+
+.cart-circle{
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    margin-left:297px;
+    transform: translate(-3px, -46px);
+    position: absolute;
+    text-align: center;
+    font-size: 8px;
+    font-weight: bold;
 }
